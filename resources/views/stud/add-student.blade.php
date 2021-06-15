@@ -30,6 +30,8 @@
                       <label for="name">Name</label>
                       <input type="text" name="name" class="form-control"/>
                   </div><br>
+
+              
                   <div class="form-group">
                       <label for="file">Choose Profile Image</label>
                       <input type="file" name="file" class="form-control" onchange="previewFile(this)">

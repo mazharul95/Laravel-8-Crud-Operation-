@@ -16,7 +16,7 @@ class StudentController extends Controller
     $name = $request->name;
     $image = $request->file('file');
     $imageName = time().'.'.$image->extension();
-    $image-> move(public_path('images'),$imageName);
+    $image->move(public_path('images'),$imageName);
 
     $student = new Student();
     $student->name = $name;

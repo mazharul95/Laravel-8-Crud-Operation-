@@ -29,12 +29,12 @@
                     @csrf
                     <input type="hidden" name="id" value="{{$post->id}}" />
                   <div class="form-group">
-                  <label for="title">Post title</label>
-                  <input type="text" name="title" class="form-control" placeholder="Enter Post title" value="{{$post->title}}" />
+                  <label for="title">Post Title</label>
+                  <input type="text" name="title" class="form-control" placeholder="Enter Post title" value="{{$post->title ?? ""}}" />
                 </div><br>
                   <div class="form-group">
                   <label for="body">Post Description</label>
-                  <textarea name="body" class="form-control" row="3">{{$post->body}}</textarea>
+                  <textarea name="body" class="form-control" row="3">{{$post->body ?? ""}}</textarea>
                 </div><br>
                   <button type="submit" class="btn btn-success">Update Post</button>
                 </form>
